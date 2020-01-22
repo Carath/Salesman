@@ -1,0 +1,84 @@
+///////////////////////////////
+// INSTALLATION (ubuntu):
+///////////////////////////////
+
+// Installing the library SDL2:
+
+sudo apt-get install libsdl2-dev
+sudo apt-get install libsdl2-image-dev
+sudo apt-get install libsdl2-ttf-dev
+
+// FreeType fonts:
+
+sudo apt-get install libfreetype6-dev
+
+///////////////////////////////
+// COMPILING:
+///////////////////////////////
+
+make clean // only if settings.h has been modified.
+make
+
+///////////////////////////////
+// LAUNCHING:
+///////////////////////////////
+
+./exec
+
+///////////////////////////////
+// COMPONENTS DESCRIPTION:
+///////////////////////////////
+
+animation.c
+
+	-> Graphical interface framework.
+
+benchmarks.c
+
+	-> Framework for benchmarking the genetic parameters.
+
+brute_force.c
+
+	-> Brute force methods (two of them) for comparing the results with the genetic search.
+	Does not support more than 13 cities in a reasonable time.
+
+drawing.c
+
+	-> Drawing part of the graphical interface.
+
+genetic.c
+
+	-> Genetic search framework. Many parameters of the search are tunable. Should (hopefully) produce
+	decent enough solutions up to 200 cities.
+
+matrix.c
+
+	-> Basic funtions on 2D-matrices.
+
+pcgrand32.c
+
+	-> PCG random number generator. Has great statistical properties and is faster than UNIX rand().
+
+permutations.c
+
+	-> Basic operations on paths.
+
+salesman.c
+
+	-> Structure and basic functions of maps of cities.
+
+SDLA.c
+
+	-> Small library whose purpose is to make SDL2 easier to use.
+
+settings.h
+
+	-> Global settings.
+
+user_inputs.c
+
+	-> Handling user inputs for the graphical interface.
+
+utilities.c
+
+	-> General purpose functions, like time measurement.
