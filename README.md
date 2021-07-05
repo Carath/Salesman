@@ -2,6 +2,8 @@
 
 *Genetic (like) approach to the Travelling Salesman Problem*
 
+<img src="img/preview.png" alt="preview" width="600" height="415">
+
 
 ## Installation
 
