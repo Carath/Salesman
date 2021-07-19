@@ -12,7 +12,7 @@ Only Linux (Ubuntu) is supported at this time.
 * Installing the graphical library SDL2, and some FreeType fonts:
 
 ```
-sudo apt install libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev libfreetype6-dev
+sudo apt install libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev libfreetype6-dev fonts-dejavu
 ```
 
 
